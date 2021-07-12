@@ -9,10 +9,10 @@ class HeroSlider {
       //* * Optional parameters * *\\
       loop: true,
       grabCursor: true,
-      effect: 'slide',
+      effect: 'fade',
       centeredSlides: true,
       slidesPerView: 1,
-      speed: 1000,
+      speed: 1400,
       breakpoints: {
         // 1024: {
         //   slidesPerView: 2,
@@ -23,7 +23,7 @@ class HeroSlider {
 
   start(options = {}) {
     options = Object.assign({
-        delay: 6000,
+        delay: 5000,
         disableOnInteraction: false,
       },
       options
