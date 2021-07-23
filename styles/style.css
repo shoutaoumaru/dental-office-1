@@ -588,6 +588,92 @@ a:active {
   font-size: 8.5333333333vw;
 }
 
+.l-menu-sp .reserve-btn-wrap {
+  text-align: center;
+}
+
+.l-menu-sp .reserve-btn-wrap h4 {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.l-menu-sp .reserve-btn-wrap .reserve-btn {
+  border: 1px solid #303030;
+  display: inline-block;
+  margin-bottom: 25px;
+  width: 172px;
+}
+
+.l-menu-sp .reserve-btn-wrap .reserve-btn span {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 10px 20px 10px 10px;
+  font-size: 12px;
+}
+
+.l-menu-sp .reserve-btn-wrap .reserve-btn-net span {
+  position: relative;
+  letter-spacing: 2px;
+}
+
+.l-menu-sp .reserve-btn-wrap .reserve-btn-net span::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 12px;
+  right: 5px;
+  height: 12px;
+  width: 12px;
+  background-image: url(/images/common/icon-link-1-black.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.l-menu-sp .reserve-btn-wrap .reserve-btn-tel span {
+  letter-spacing: 4px;
+}
+
+.l-menu-sp .reserve-btn-wrap .reserve-btn-tel span::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  height: 12px;
+  width: 12px;
+  background-image: url(/images/common/icon-tel.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 600px) {
+  .l-menu-sp .reserve-btn-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0 40px;
+  }
+  .l-menu-sp .reserve-btn-wrap h4 {
+    font-size: 18px;
+  }
+  .l-menu-sp .reserve-btn-wrap .reserve-btn {
+    width: 240px;
+  }
+  .l-menu-sp .reserve-btn-wrap .reserve-btn span {
+    padding: 15px 30px 15px 20px;
+    font-size: 16px;
+  }
+  .l-menu-sp .reserve-btn-wrap .reserve-btn span::after {
+    top: 16px;
+    right: 12px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
 .p-mv {
   position: relative;
   background: #fff;
