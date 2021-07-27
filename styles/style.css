@@ -771,7 +771,7 @@ a:active {
 
 .p-news__list li a {
   display: block;
-  padding: 6vw 5vw;
+  padding: 4vw 5vw;
 }
 
 .p-news__date {
@@ -1580,6 +1580,10 @@ a:active {
   margin: 18vw 0 20vw 0;
 }
 
+.faq-wrapper .faq .c-txt-md {
+  font-size: 14px;
+}
+
 .faq-wrapper .faq__title {
   margin-bottom: 10vw;
 }
@@ -1591,10 +1595,6 @@ a:active {
 .faq-wrapper .faq dl {
   margin-top: -8vw;
   margin-bottom: 2.6vw;
-}
-
-.faq-wrapper .faq dl .c-txt-md {
-  font-size: 14px;
 }
 
 .faq-wrapper .faq dt {
@@ -1669,6 +1669,10 @@ a:active {
 
 .faq-wrapper .p-open-time {
   margin: 0 0 8vw 0;
+}
+
+.faq-wrapper .btn-topicpath {
+  margin: 5vw 0 5vw 0;
 }
 
 .c-news {
@@ -3237,12 +3241,17 @@ a:active {
   .contents-nav .p-index__desc {
     width: 48%;
   }
+  .contents-nav .p-index__title {
+    padding-bottom: 16px;
+    padding-right: 60px;
+  }
   .contents-nav .p-index__title::after {
+    top: 15px;
     height: 2vw;
     background-size: auto 3vw;
   }
   .p-news {
-    margin-top: 150px;
+    margin-top: 120px;
   }
   .p-news h2 {
     font-size: 24px;
@@ -3255,7 +3264,7 @@ a:active {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 5vw;
+    padding: 3vw 5vw;
   }
   .p-news__date {
     font-size: 18px;
@@ -3427,6 +3436,9 @@ a:active {
   .first-wrapper .fa-contents .fa-message__inner {
     margin-bottom: 10vw;
   }
+  .first-wrapper .fa-contents .fa-gallery {
+    margin-bottom: 10vw;
+  }
   .first-wrapper .fa-contents .fa-gallery li {
     width: 25%;
   }
@@ -3561,31 +3573,37 @@ a:active {
   .staff-wrapper .p-footer .p-open-time__table th:first-child {
     width: 9.8vw;
   }
-  .faq-contents .c-container {
+  .faq-wrapper .faq-contents .c-container {
     padding: 0 7vw;
   }
-  .faq-contents .faq__title {
+  .faq-wrapper .faq-contents .faq {
+    margin: 10vw 0;
+  }
+  .faq-wrapper .faq-contents .faq__title {
     text-align: center;
   }
-  .faq-contents .faq .c-txtarea01 .c-txt-sm {
+  .faq-wrapper .faq-contents .faq .c-txt-sm {
     font-size: 16px;
   }
-  .faq-contents .faq dt::before {
+  .faq-wrapper .faq-contents .faq .c-txt-md {
+    font-size: 18px;
+  }
+  .faq-wrapper .faq-contents .faq dt::before {
     font-size: 28px;
   }
-  .faq-contents .faq dt span::after {
+  .faq-wrapper .faq-contents .faq dt span::after {
     width: 3vw;
   }
-  .faq-contents .faq dd::before {
+  .faq-wrapper .faq-contents .faq dd::before {
     font-size: 30px;
   }
-  .faq-contents .nw-topview {
+  .faq-wrapper .faq-contents .nw-topview {
     margin: 0 -3vw;
   }
-  .faq-contents .nw-topview__inner {
+  .faq-wrapper .faq-contents .nw-topview__inner {
     margin: 0 -4vw;
   }
-  .faq-contents .p-footer__wrap {
+  .faq-wrapper .faq-contents .p-footer__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3593,13 +3611,30 @@ a:active {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .faq-contents .p-footer .p-open-time {
+  .faq-wrapper .faq-contents .p-footer .p-open-time {
     margin: 0;
   }
-  .faq-contents .p-footer .p-open-time__wrap {
+  .faq-wrapper .faq-contents .p-footer .p-open-time__wrap {
     width: 90%;
   }
-  .faq-contents .p-footer .p-open-time__table th:first-child {
+  .faq-wrapper .faq-contents .p-footer .p-open-time__table th:first-child {
+    width: 9.8vw;
+  }
+  .faq-wrapper .p-footer__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .faq-wrapper .p-footer .p-open-time {
+    margin: 0;
+  }
+  .faq-wrapper .p-footer .p-open-time__wrap {
+    width: 90%;
+  }
+  .faq-wrapper .p-footer .p-open-time__table th:first-child {
     width: 9.8vw;
   }
   .recruit-wrapper .contents-recruit .c-table01 tr th {
@@ -3693,6 +3728,9 @@ a:active {
   }
   .m-button-normal a {
     height: 8vw;
+  }
+  .btn-topicpath {
+    font-size: 22px;
   }
   .p-header .l-menu-sp-button {
     display: none;
@@ -3817,8 +3855,21 @@ a:active {
   .first-wrapper .fa-contents .fa-gallery__list li {
     height: 260px;
   }
-  .faq-contents .faq {
-    margin-top: 25vw;
+  .faq-wrapper .faq-contents .faq__title {
+    margin-bottom: 5vw;
+  }
+  .faq-wrapper .faq-contents .faq__block dt .c-txt-md,
+  .faq-wrapper .faq-contents .faq__block dd .c-txt-md {
+    font-size: 24px;
+  }
+  .faq-wrapper .faq-contents .faq .c-title {
+    font-size: 26px;
+  }
+  .faq-wrapper .faq-contents .faq .c-txtarea01 {
+    margin-bottom: 15vw;
+  }
+  .faq-wrapper .faq-contents .faq .c-txtarea01 .c-txt-sm {
+    font-size: 20px;
   }
   .contents-recruit .recruit-message__wrap {
     display: -webkit-box;
@@ -3875,6 +3926,9 @@ a:active {
   .btn-category i {
     margin-top: 20px;
     font-size: 18px;
+  }
+  .c-topview__img {
+    height: 40vw;
   }
   .p-header .logo {
     width: 160px;

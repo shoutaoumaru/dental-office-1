@@ -116,7 +116,11 @@
     }
 
     &__title {
+      padding-bottom: 16px;
+      padding-right: 60px;
+
       &::after {
+        top: 15px;
         height: 2vw;
         background-size: auto 3vw;
       }
@@ -126,7 +130,7 @@
 
 //.p-news
 .p-news {
-  margin-top: 150px;
+  margin-top: 120px;
 
   & h2 {
     font-size: 24px;
@@ -138,7 +142,7 @@
       & a {
         display: flex;
         align-items: center;
-        padding: 5vw;
+        padding: 3vw 5vw;
       }
     }
   }
@@ -274,6 +278,7 @@
 
 // * * * * * * * * * first-page * * * * * * 
 .first-wrapper {
+
   & .fs-topview {
     &__img {
       height: 40vh;
@@ -342,6 +347,8 @@
     }
 
     & .fa-gallery {
+      margin-bottom: 10vw;
+
       & li {
         width: 25%;
       }
@@ -521,46 +528,73 @@
 }
 
 // * * * * * * * * * faq-page * * * * * * 
-.faq-contents {
-  & .c-container {
-    padding: 0 7vw;
-  }
-
-  & .faq {
-    &__title {
-      text-align: center;
+.faq-wrapper {
+  .faq-contents {
+    & .c-container {
+      padding: 0 7vw;
     }
 
-    & .c-txtarea01 {
+    & .faq {
+      margin: 10vw 0;
+
+      &__title {
+        text-align: center;
+      }
+
       & .c-txt-sm {
         font-size: 16px;
       }
-    }
 
-    & dt {
-      &::before {
-        font-size: 28px;
+      & .c-txt-md {
+        font-size: 18px;
       }
 
-      & span {
-        &::after {
-          width: 3vw;
+      & dt {
+        &::before {
+          font-size: 28px;
+        }
+
+        & span {
+          &::after {
+            width: 3vw;
+          }
+        }
+      }
+
+      & dd {
+        &::before {
+          font-size: 30px;
         }
       }
     }
 
-    & dd {
-      &::before {
-        font-size: 30px;
+    & .nw-topview {
+      margin: 0 -3vw;
+
+      &__inner {
+        margin: 0 -4vw;
       }
     }
-  }
 
-  & .nw-topview {
-    margin: 0 -3vw;
+    .p-footer {
+      &__wrap {
+        display: flex;
+        justify-content: space-between;
+      }
 
-    &__inner {
-      margin: 0 -4vw;
+      & .p-open-time {
+        margin: 0;
+
+        &__wrap {
+          width: 90%;
+        }
+
+        &__table {
+          & th:first-child {
+            width: 9.8vw;
+          }
+        }
+      }
     }
   }
 
