@@ -2242,7 +2242,7 @@ a:active {
   position: absolute;
   z-index: 1000;
   left: 46%;
-  bottom: -5%;
+  bottom: 10%;
   z-index: 2;
   padding: 10px 10px 110px;
   overflow: hidden;
